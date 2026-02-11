@@ -1,0 +1,19 @@
+{
+  "name": "pi-custom-provider",
+  "version": "1.0.0",
+  "description": "",
+  "license": "MIT",
+  "author": "mkdir700",
+  "type": "module",
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@mariozechner/pi-coding-agent": "^0.52.9"
+  }
+}
