@@ -1,6 +1,11 @@
 import type { ExtensionAPI } from "@mariozechner/pi-coding-agent";
 
 export default function (pi: ExtensionAPI) {
+  pi.registerProvider("anthropic", {
+    baseUrl: process.env.ANTHROPIC_BASE_URL,
+    apiKey: process.env.ANTHROPIC_API_KEY,
+  });
+
   pi.registerProvider("codex-api", {
     baseUrl: process.env.OPENAI_CODEX_BASE_URL,
     apiKey: process.env.OPENAI_CODEX_API_KEY,
